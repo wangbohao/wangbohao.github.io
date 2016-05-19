@@ -3,10 +3,47 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="style/swiper-3.3.1.min.css">
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		html,body,.swiper-container,.swiper-wrapper{
+			height:100%
+		}
+		.red{
+			background-color: #f00;
+		}
+		.blue{
+			background-color: #00f;
+
+		}
+		.green{
+			background-color: #0f0;
+		}
+		.swiper-slide{
+			height:100%;
+			color:#fff;
+			text-align: center;
+			line-height: 100px;
+		}
+	</style>
 </head>
 <body>
-	    <div>汪渤皓真帅</div>
-	    <h1>nihao</h1>
-	    <h2>nihao</h2>
+	<div class="swiper-container">
+	  <div class="swiper-wrapper">
+	    <div class="swiper-slide red"><h1>slider1</h1></div>
+	    <div class="swiper-slide blue"><h1>slider2</h1></div>
+	    <div class="swiper-slide green"><h1>slider3</h1></div>
+	  </div>
+	</div>
+	<script src="script/swiper-3.3.1.min.js"></script>
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+			autoplay: 5000,//可选选项，自动滑动
+		})
+	</script>
 </body>
 </html>
